@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Variables!</title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Variables!</title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+  <body>
+    <script>
+      "use strict"; // Makes it so you have to state var, let, const to decalre variables
 
-<body>
+      var first = "Wes"; // can be updated - Scope: function
+      let age = 300; // can be updated - Scope: block
+      const cool = true; // cannot be updated - Scope: block
+      console.log(first);
 
-</body>
+      console.log(sssdf);
 
+      console.log(cool);
+
+      if (age > 10) {
+        console.log("You are old");
+      }
+    </script>
+  </body>
 </html>

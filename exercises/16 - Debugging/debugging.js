@@ -9,6 +9,7 @@ people.forEach((person, index) => {
 });
 
 // Console Methods
+// $0
 
 // Callstack
 
