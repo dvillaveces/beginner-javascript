@@ -10,7 +10,20 @@
 
 <body>
   <script>
+    const person1 = {
+      name: "wes",
+      age: 200,
+    };
 
+    const myMap = new Map();
+    // .set()
+    myMap.set("name", "wes");
+    myMap.set(100, "This is a number");
+    myMap.set(person1, "Really cool");
+
+    console.log(myMap.get(person1));
+    // .has()
+    // .delete()
   </script>
 </body>
 

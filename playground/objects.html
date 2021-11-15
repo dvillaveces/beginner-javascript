@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+  <body>
+    <script>
+      const age = 100;
+      const person = {
+        age,
+        name: "wes",
+        sayHello: function (greeting = "Hey") {
+          return `${greeting} ${this.name}`;
+        },
+      };
 
-<body>
-  <script>
+      person.job = "Web Developer";
 
-  </script>
-</body>
+      console.log(person?.name?.dog);
 
+      delete person.job;
+
+      console.log(person);
+    </script>
+  </body>
 </html>

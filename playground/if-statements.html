@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>If Statements</title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>If Statements</title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+  <body>
+    <h2>Truthy Values</h2>
+    * 1 * -10 * full string * a string of "0" * empty array * empty object
 
-<body>
-  <script>
-    if (10 > 2) {
-      console.log('Yep');
-    }
-  </script>
-</body>
+    <h2>Falsy Values</h2>
+    * 0 * undefined variable * Variable set to null * a variable set to `"hello"
+    - 10` NaN * empty string
 
+    <script>
+      if (10 > 2) {
+        console.log("Yep");
+      }
+
+      // Ternary
+      const count = 3;
+      const word = count == 1 ? "item" : "items";
+      console.log(`You have ${count} ${word}`);
+    </script>
+  </body>
 </html>

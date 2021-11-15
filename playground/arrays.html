@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>
+  <body>
+    <script>
+      const names = ["wes", "kait", "snickers"];
+      console.log(names[names.length - 1]);
 
-  </title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+      names.push("lux");
+      console.log(names);
+      names.unshift("poppy");
+      console.log(names);
 
-<body>
+      const bikes = ["bianchi", "miele", "panasonic", "miyata"];
+      const newBikes = [...bikes.slice(0, 2), "benotto", ...bikes.slice(2)];
+      console.log(newBikes);
 
-</body>
+      const comments = [
+        { text: "Cool Beans", id: 123 },
+        { text: "Love this", id: 133 },
+        { text: "Neato", id: 233 },
+        { text: "Good bikes", id: 333 },
+        { text: "So good", id: 433 },
+      ];
 
+      function deleteComment(id, comments) {
+        // Find index of the item in the array
+        const itemIndex = comments.findIndex((comment) => comment.id === id);
+        // Make a new array without item in it
+        const newComments = [
+          ...comments.slice(0, itemIndex),
+          ...comments.slice(itemIndex + 1),
+        ];
+        // return our new array
+        return newComments;
+      }
+
+      // // Mutation method
+      // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // // numbers.reverse();
+      // // console.log(numbers);
+      // numbersReversed = [...numbers].reverse();
+      // console.log(numbersReversed);
+      //
+      // // Immutable
+      // const pizzaSlice = numbers.slice(2, 4);
+      // console.log(pizzaSlice);
+    </script>
+  </body>
 </html>
